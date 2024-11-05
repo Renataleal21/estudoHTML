@@ -6,31 +6,50 @@
     <title>hierarquia do titulo</title>
     <!--estilo csss-->
     <style>
+        @font-face {
+            font-family: "fonte";
+            src: url(fonte/ChristmasSparkle_PERSONAL.ttf);
+        }
+
+#fonte{
+    font-family: "fonte";
+    font-size: 5em;
+}
+
+
+        /*importando fonte*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
         body{
             background-image: linear-gradient(burlywood,pink);
+            background-attachment: fixed;/*fixa o background no fundo*/
+            text-align: center;/*alinha o conteudo ao centro dentro do body*/
+            
         }
-        #div1{
+        div{
+            display: inline-block;
             width: 400px;
-            justify-items: center;
-            margin: auto;
+            padding: 40px;
+            height: 100vh;
         }
+        h1,h2,h3,h4,h5,h6{
+            /*aplicando a fonte da importação*/
+            font-family:  "Great Vibes", cursive;
+        }
+       
+       
         p{
             text-align: justify;
             color: bisque;
-            font-size: 20px;
-        }
-        #div2{
-            width: 400px;
-            justify-items: center;
-        }
-        p{
-            text-align: justify;
-            color: bisque;
-            font-size: 20px;
+            font-size: 23px;/*23px é iguala 1em*/
+            font-family:  "Great Vibes", cursive;
         }
     </style>
 </head>
 <body>
+    <h1 id="fonte">fonte personalizada</h1>
+
     <div id="div1">
     <h1>falta de sintonia</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum facilis quia. Ipsum ea ullam, doloribus quo maiores beatae itaque fugit rerum ut, quidem repudiandae voluptates minima, incidunt corrupti. Ab.</p>
@@ -38,14 +57,16 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab maxime autem quibusdam libero molestiae cum unde veniam eos aperiam eveniet recusandae voluptates aut delectus id eligendi, iste quo quia!</p>
     <h3>passe mais tempo com seu desafeto</h3>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ullam similique unde doloribus facere laudantium, molestiae non vel quidem nisi beatae dolorem blanditiis dignissimos quas! Expedita unde reprehenderit neque odio.</p>
-    <h4>saiba com quem esta lidando</h4>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quaerat enim repudiandae cupiditate at ad, vitae illo possimus quis eos, tenetur nulla, numquam laborum libero aperiam modi aut minima sit?</p>
+    
 </div>
 
-<div id="div2"
+<div id="div2">
+    <h4>saiba com quem esta lidando</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum quaerat enim repudiandae cupiditate at ad, vitae illo possimus quis eos, tenetur nulla, numquam laborum libero aperiam modi aut minima sit?</p>
     <h5>tenha objetividade</h5>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestiae fugit, quia accusamus fugiat rem vero sed incidunt illo! Debitis molestiae facilis eum possimus quo velit magnam esse iusto minus.</p>
     <h6>seja persistente</h6>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam ad nihil, cum laudantium in quam qui delectus velit error fugit repudiandae ducimus corporis doloremque quaerat quae perferendis aliquam dolorem.</p>
+    </div>
     </body>
 </html>
